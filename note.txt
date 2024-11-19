@@ -1,0 +1,13 @@
+//Project Stepup
+tsx start => rafce
+
+
+step 1 : npx create-next-app@latest
+step 2 : npx shadcn@latest init
+step 3 : npx shadcn@latest add button
+step 4 : npx shadcn@latest add (All)
+step 5 : npm i @clerk/nextjs @prisma/client
+//Auth
+step 6 : npm install @clerk/nextjs
+
+

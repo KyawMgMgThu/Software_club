@@ -9,5 +9,8 @@ step 4 : npx shadcn@latest add (All)
 step 5 : npm i @clerk/nextjs @prisma/client
 //Auth
 step 6 : npm install @clerk/nextjs
+step 7 : npm install query-string
+step 8 : npm install react-icons
+
 
 

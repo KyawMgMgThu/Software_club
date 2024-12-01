@@ -5,7 +5,7 @@
 /* @import "@liveblocks/react-ui/styles.css"; */
 /* @import "@liveblocks/react-lexical/styles.css"; */
 
-/* @import "../styles/dark-theme.css"; */
+@import "../styles/dark-theme.css";
 
 /* ========================================== TAILWIND STYLES */
 @layer base {
@@ -15,6 +15,7 @@
     margin: 0;
   }
 
+  /* Custom Scrollbar Styling */
   .custom-scrollbar::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -36,13 +37,16 @@
 }
 
 @layer utilities {
+  /* Text and Font Utilities */
   .text-28-semibold {
     @apply text-[28px] font-semibold;
   }
+
   .text-10-regular {
     @apply text-[10px] font-normal;
   }
 
+  /* Gradient Utilities */
   .gradient-blue {
     @apply bg-gradient-to-t from-blue-500 to-blue-400;
   }
@@ -50,6 +54,7 @@
     @apply bg-gradient-to-t from-red-500 to-red-400;
   }
 
+  /* Dialog Box Styling */
   .shad-dialog {
     @apply w-full max-w-[400px] rounded-xl border-none bg-doc bg-cover px-5 py-7 shadow-xl sm:min-w-[500px] !important;
   }
@@ -58,6 +63,7 @@
     @apply focus:ring-0 focus:ring-offset-0 focus-visible:border-none focus-visible:outline-none focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
   }
 
+  /* Select Box Customizations */
   .shad-select {
     @apply w-fit border-none bg-transparent text-blue-100 !important;
   }
@@ -70,6 +76,7 @@
     @apply cursor-pointer bg-dark-200 text-blue-100 focus:bg-dark-300 hover:bg-dark-300 focus:text-blue-100 !important;
   }
 
+  /* Popover and Floating Toolbar Styling */
   .shad-popover {
     @apply w-[460px] border-none bg-dark-200 shadow-lg !important;
   }
@@ -90,6 +97,7 @@
     @apply custom-scrollbar h-[calc(100vh-140px)] gap-5 overflow-auto px-5 pt-5 lg:flex-row lg:items-start lg:justify-center  xl:gap-10 xl:pt-10;
   }
 
+  /* Header, Document List & Sidebar Styling */
   .header {
     @apply min-h-[92px] min-w-full flex-nowrap bg-dark-100 flex w-full items-center justify-between gap-2 px-4;
   }
@@ -118,6 +126,7 @@
     @apply line-clamp-1 border-dark-400 text-base font-semibold leading-[24px] sm:pl-0 sm:text-xl;
   }
 
+  /* Collaborators and Comments Styling */
   .view-only-tag {
     @apply rounded-md bg-dark-400/50 px-2 py-0.5 text-xs text-blue-100/50;
   }

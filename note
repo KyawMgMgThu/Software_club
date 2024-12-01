@@ -3,3 +3,21 @@
 step 1 : npx create-next-app@latest ./ --typescript --tailwind --eslint   
 step 2 : npx shadcn@latest init
 step 3 : npx shadcn@latest add button
+
+
+//npm error fix
+step 4 : npm config set legacy-peer-deps true 
+step 5 : npm install jsm-editor
+
+//ts-node not found error
+step 6 : npm install -g ts-node typescript 
+step 7 : npm jsm-editor add editor
+
+
+//Editor.tsx error fix 
+step 8 : npm install @lexical/rich-text @lexical/react
+
+
+//clerk install 
+step 9 : npm install @clerk/nextjs
+step 10 : npm install @clerk/themes

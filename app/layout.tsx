@@ -7,10 +7,9 @@ import {
 } from '@clerk/nextjs';
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/Sidebar";
-import Header from "@/components/Header";
 import React, { ReactNode } from "react";
-
+import Header from '@/components/Header';
+import Link from 'next/link';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -34,13 +33,15 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
           <div className="mx-4 m-auto">
             <Header />
             <section className="flex gap-4 min-h-[500px] flex-col lg:flex-row">
-              <Sidebar />
-              <main className="border-l border-slate-300 px-4 flex-grow">
+            
+              <main className=" px-4 flex-grow">
                 {children}
               </main>
             </section>
-            <footer className="text-center py-4 text-slate-400 mt-4 border-t border-slate-300">
-              <small className="text-xs">UCS Myeik |&copy; Copyright 2024</small>
+            <footer className="border-t bg-">
+              <div className="flex-center.wrapper.flex-between.flex.flex-col.gap-4.p-5.text-center sm:flex-row"><Link href="/">
+              <small className="text-xs">PU Myeik | Software Club &copy; Copyright 2024. All Rights reserved.</small>
+              </Link></div>
             </footer>
           </div>
         </body>

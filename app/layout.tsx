@@ -13,7 +13,7 @@ import Link from 'next/link';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "UCS Myeik | Software Club",
+  title: "PU Myeik | Software Club",
   description: "For Software Club",
 };
 
@@ -39,7 +39,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
               </main>
             </section>
             <footer className="border-t bg-">
-              <div className="flex-center.wrapper.flex-between.flex.flex-col.gap-4.p-5.text-center sm:flex-row"><Link href="/">
+              <div className="flex-center wrapper flex-between flex flex-col gap-4 p-5 text-center sm:flex-row"><Link href="/">
               <small className="text-xs">PU Myeik | Software Club &copy; Copyright 2024. All Rights reserved.</small>
               </Link></div>
             </footer>

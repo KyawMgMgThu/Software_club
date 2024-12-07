@@ -23,7 +23,7 @@ interface RootLayoutProps {
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
-    <ClerkProvider appearance={{ baseTheme: 'dark', variables: {
+    <ClerkProvider appearance={{ variables: {
       colorPrimary: "blue",
       colorText: "#14aceb",
       fontSize: "16px"

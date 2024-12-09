@@ -23,11 +23,6 @@ interface RootLayoutProps {
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
-    <ClerkProvider appearance={{ variables: {
-      colorPrimary: "blue",
-      colorText: "#14aceb",
-      fontSize: "16px"
-    } }}>
       <html lang="en">
         <body className={inter.className}>
           <div className="mx-4 m-auto">
@@ -46,7 +41,6 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
           </div>
         </body>
       </html>
-    </ClerkProvider>
   );
 };
 
